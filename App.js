@@ -34,6 +34,8 @@ export default class App extends Component {
                 isVisible={this.state.visible}
                 animationInTiming={200}
                 animationOutTiming={100}
+                onBackdropPress={() => { this.onClick(true) }}
+                onRequestClose={() => { this.onClick(true)}}
                 style={{ paddingBottom:550,marginTop: 0,marginBottom:0, marginLeft: 0, backgroundColor: '#DFDFDF', height: 600,width:200 }}
 
               >
